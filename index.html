@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ev Club</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+  <div class="nav-container">
+
+
+    <nav class="width0">
+      <div onclick="toggle()" class="cros"><i style="color: black;" class="toggle1 fa-solid fa-bars  "></i></div>
+      <ul>
+        <li class="nav-link"><a style="color: black; font-size: 1.5em;" href="#">Home</a></li>
+        <li class="nav-link"><a style="color: black; font-size: 1.5em;" href="#Events">Events</a></li>
+        <li class="nav-link"><a style="color: black; font-size: 1.5em;" href="ourteam.html">Our Team</a></li>
+        <li class="nav-link"><a style="color: black; font-size: 1.5em;" href="archive.html">Archives</a></li>
+
+      </ul>
+    </nav>
+  </div>
+
+  <div class="hero">
+
+    <div class="parallax-layer layer-5"></div>
+    <div class="parallax-layer layer-4"></div>
+    <div class="parallax-layer layer-3"></div>
+    <div class="parallax-layer car-1"></div>
+    <div class="parallax-layer car-2"></div>
+    <div class="parallax-layer scooter-1"></div>
+    <div class="parallax-layer scooter-2"></div>
+    <div class="parallax-layer layer-2"></div>
+    <div class="parallax-layer layer-1"></div>
+
+    <div class="logo">
+      <!-- <img src="assets/Ev Club.png" alt="" /> -->
+      <div class="headline"><img class="evLogo" src="./EV Logo1.png" alt="EV Club's logo "></div>
+      <div class="tag-line">
+        
+        <h2>Driving Change, One Change at a Time</h2>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="projects" id="Projects">
+    <div class="projects-heading ">
+      <h1>PROJECTS</h1>
+    </div>
+
+
+    <!-- card container starts here -->
+    <div class="swiper-container" style="height: 90vh;">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" style="background-image:url('car.png')"></div>
+        <div class="swiper-slide" style="background-image:url('car2.png')"></div>
+        <div class="swiper-slide" style="background-image:url('bike1.png')"></div>
+        <!-- Add more slides as needed -->
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+
+
+
+    <div class="Events" id="Events">
+      <div class="events-heading">Events</div>
+
+      <div class="event-cards">
+        <div class="event-card iiser" id="iiser">
+          <div class="event-heading ">IISER Science Fest</div>
+          <div class="event-about">
+            IISER Pune Science Expo is an annual showcase of innovative research by students and faculty, fostering
+            scientific curiosity, collaboration, and public engagement across diverse disciplines.
+          </div>
+        </div>
+
+        <div class="event-cards">
+          <div class="event-card iiev">
+            <div class="event-heading ">India International EV Show </div>
+            <div class="event-about">
+              India International EV Show ( IIEV Show ) is India's largest gathering of Electric Vehicles & Energy
+              Storage System Industry, it is coupled with the vast opportunities and potential challenges of EV
+              development in India.
+            </div>
+          </div>
+
+          <div class="event-cards">
+            <div class="event-card alumni">
+              <div class="event-heading ">Alumni Meet</div>
+              <div class="event-about">
+                Alumni meets bring graduates together for a reunion, sharing experiences and networking. It's a chance
+                to catch up, celebrate achievements, and stay connected with their alma mater.
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+        <script src="script.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+          var swiper = new Swiper('.swiper-container', {
+            effect: 'cube',
+            grabCursor: true,
+            cubeEffect: {
+              shadow: true,
+              slideShadows: true,
+              shadowOffset: 20,
+              shadowScale: 0.94,
+            },
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          });
+        </script>
+
+
+
+
+
+
+
+
+
+        <footer>
+        <div class="footer line"></div>
+          <div class="footer-images">
+            <ul class="socials">
+            <li><a href="https://www.youtube.com/@EVCLUBAIT"><i id="yu" class="social-media fa-brands fa-youtube fa-2x"
+                ></i></a></li>
+                <li><a href="https://www.instagram.com/ait_evclub/"><i id="in" class="social-media fa-brands fa-instagram fa-2x" ></i></a></li>
+           <li><a href="https://www.linkedin.com/company/ev-club-ait"> <i id=" li" class="social-media fa-brands fa-linkedin-in fa-2x" ></i></a></li>
+            </ul>
+          </div>
+           <br>
+      </footer>
+      <script src="https://kit.fontawesome.com/ba3380dd9e.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
